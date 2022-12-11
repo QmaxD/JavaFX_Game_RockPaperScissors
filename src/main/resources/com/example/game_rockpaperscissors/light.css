@@ -1,0 +1,25 @@
+.button {
+
+}
+
+.button:hover {
+    -fx-opacity: 0.00;
+}
+
+.button:focused {
+    -fx-opacity: 0.80;
+    
+}
+
+.image-view {
+    -fx-opacity: 1.00;
+}
+
+.image-view:hover {
+    -fx-opacity: 0.50;
+}
+
+.image-view:focused {
+    -fx-opacity: 0.25;
+}
+
