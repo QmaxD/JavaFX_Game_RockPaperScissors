@@ -23,7 +23,7 @@
         <StackPane minHeight="150" minWidth="150" stylesheets="@light.css">
             <ImageView fitHeight="150.0" fitWidth="150.0">
                 <image><Image url="E:\Project_JAVA\Game_RockPaperScissors\src\main\resources\image_png\image_random.png" /></image></ImageView>
-            <Button fx:id="ButtonRandom" alignment="CENTER" cancelButton="true" minHeight="150" minWidth="150" onAction="#ButtonClick_Random" opacity="0.95" text="Random">
+            <Button fx:id="ButtonRandom" alignment="CENTER" cancelButton="true" minHeight="150" minWidth="150" onAction="#ButtonClick_Random" opacity="0.95" text="Random" visible="true">
                 <font><Font size="18.0" /></font></Button>
         </StackPane>
 

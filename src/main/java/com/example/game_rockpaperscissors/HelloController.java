@@ -58,7 +58,7 @@ public class HelloController {
 
     void Logic() throws InterruptedException {
         Random rnd = new Random();
-        if (personChoice != "Рандом") {
+        if (!personChoice.equals("Рандом")) {
             int n = rnd.nextInt(0, 3);
             AIText.setText(cc[n]);
             AIChoice = cc[n];
@@ -67,17 +67,16 @@ public class HelloController {
             int n = rnd.nextInt(0, 3);
             PersonalText.setText(cc[n]);
             personChoice = cc[n];
-            Thread.sleep(1000);
             n = rnd.nextInt(0, 3);
             AIText.setText(cc[n]);
             AIChoice = cc[n];
         }
 
-        if ( personChoice == AIChoice )
+        if ( personChoice.equals(AIChoice))
                 Result.setText("Ничья.");
-        else if ( (personChoice == "Камень" && AIChoice == "Ножницы")
-                || (personChoice == "Ножницы" && AIChoice == "Бумага")
-                || (personChoice == "Бумага" && AIChoice == "Камень") ) {
+        else if ( (personChoice.equals("Камень") && AIChoice.equals("Ножницы"))
+                || (personChoice.equals("Ножницы") && AIChoice.equals("Бумага"))
+                || (personChoice.equals("Бумага") && AIChoice.equals("Камень")) ) {
             count[0] += 1;
             Result.setText("Вы победили!");
         }
